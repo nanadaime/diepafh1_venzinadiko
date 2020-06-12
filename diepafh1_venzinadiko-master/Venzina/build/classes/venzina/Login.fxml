@@ -10,7 +10,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="venzina.LoginController">
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="400.0" prefWidth="700.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="venzina.LoginController">
    <children>
       <Label layoutX="98.0" layoutY="82.0" text="Welcome for a RE-FILL">
          <textFill>
@@ -27,7 +27,7 @@
       </Label>
       <AnchorPane layoutX="446.0" layoutY="34.0" prefHeight="341.0" prefWidth="200.0" style="-fx-background-color: #348385; -fx-border-color: #9e9319;" AnchorPane.bottomAnchor="34.0" AnchorPane.rightAnchor="54.0" AnchorPane.topAnchor="34.0">
          <children>
-            <Button fx:id="proceedBtn" layoutX="70.0" layoutY="234.0" mnemonicParsing="false" text="Είσοδος" />
+            <Button fx:id="proceedBtn" layoutX="59.0" layoutY="238.0" mnemonicParsing="false" onAction="#Είσοδος" text="Είσοδος" />
             <PasswordField fx:id="cardtxt" layoutX="30.0" layoutY="138.0" prefHeight="30.0" prefWidth="141.0" />
             <Label fx:id="enterlabel" layoutX="12.0" layoutY="68.0" text="Enter Credit Card here" textAlignment="CENTER" textFill="#bfd149">
                <font>
