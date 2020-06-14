@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="700.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="venzina.HomePageController">
+    <stylesheets>
+        <URL value="@homepage.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="239.0" layoutY="14.0" text="Welcome for a RE-FILL">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#13acae" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="186.0" text="Bενζίνη" textFill="#0dd945">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="325.0" layoutY="186.0" text="Diesel" textFill="#d71919">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="525.0" layoutY="186.0" text="Αέριο" textFill="#3266dd">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Button layoutX="666.0" mnemonicParsing="false" onAction="#closeButtonAction" text="X" />
+      <ImageView fitHeight="115.0" fitWidth="115.0" layoutX="492.0" layoutY="54.0">
+         <image>
+            <Image url="@../img/Aerio.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="115.0" layoutX="286.0" layoutY="54.0">
+         <image>
+            <Image url="@../img/diesel.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="115.0" layoutX="80.0" layoutY="54.0">
+         <image>
+            <Image url="@../img/βενζινη.PNG" />
+         </image>
+      </ImageView>
+      <RadioButton layoutX="93.0" layoutY="233.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="78.0" text="1.394" textFill="#fffbfb" />
+      <RadioButton layoutX="511.0" layoutY="233.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="78.0" text="1.119" textFill="#fffbfb" />
+      <RadioButton layoutX="312.0" layoutY="233.0" mnemonicParsing="false" prefHeight="15.0" prefWidth="78.0" text="0.998" textFill="#fffbfb" />
+   </children>
+</AnchorPane>
